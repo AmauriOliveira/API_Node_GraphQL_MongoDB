@@ -1,8 +1,37 @@
-docker run -d -p 27017:27017 -p 28017:28017 -e AUTH=no tutum/mongodb
+# API Node com GraphQL e MongoDB
 
-docker run --name DB-postgres -d -p 5432:5432 -e POSTGRES_PASSWORD=amauri32 postgres
+![JavaScript Badge](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript)
+![NodejsBadge](https://img.shields.io/badge/-Nodejs-339933?style=flat-square&logo=Node.js&logoColor=white)
+![MongoDB Badge](https://img.shields.io/badge/-MongoDB-black?style=flat-square&logo=mongodb)
+![Docker Badge](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Firebase Badge](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=white)
+![Git Badge](https://img.shields.io/badge/-Git-black?style=flat-square&logo=git)
+![GitHub Badge](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github)
+![VSCode Badge](https://img.shields.io/badge/-VSCode-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
 
-## Query e Mutation
+> Utilizando de nodeJs, apolloServer e javaScript.
+
+## Banco de dados
+
+> Criando um container _mongodb_ no docker
+
+```bash
+sudo docker run -d -p 27017:27017 --name graphQl-mongodb -p 28017:28017 -e AUTH=no tutum/mongodb
+```
+
+> Ligando o banco
+
+```bash
+sudo docker start graphQl-mongodb
+```
+
+> Desligando o banco
+
+```bash
+sudo docker stop graphQl-mongodb
+```
+
+## Query, Mutation e Subscription
 
 > Criar um user
 
@@ -99,6 +128,17 @@ query {
     author {
       fullName
     }
+  }
+}
+```
+
+> Subscription e ouvir um evento em tempo real com WebSocket
+
+```gql
+subscription {
+  userAdded {
+    _id
+    fullName
   }
 }
 ```
