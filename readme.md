@@ -4,7 +4,6 @@
 ![NodejsBadge](https://img.shields.io/badge/-Nodejs-339933?style=flat-square&logo=Node.js&logoColor=white)
 ![MongoDB Badge](https://img.shields.io/badge/-MongoDB-black?style=flat-square&logo=mongodb)
 ![Docker Badge](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Firebase Badge](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=white)
 ![Git Badge](https://img.shields.io/badge/-Git-black?style=flat-square&logo=git)
 ![GitHub Badge](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github)
 ![VSCode Badge](https://img.shields.io/badge/-VSCode-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
